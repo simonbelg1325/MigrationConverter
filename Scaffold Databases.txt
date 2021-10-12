@@ -1,0 +1,3 @@
+﻿dotnet ef dbcontext Scaffold "Data Source=.\SQLEXPRESS;Initial Catalog=KnowledgeBase;Integrated Security=True;" Microsoft.EntityFrameworkCore.SqlServer --context KnowlegdeBaseOldContext --output-dir /Users/wondisi/source/repos/KnowledgeBaseConverter/KnowledgeBaseConverter/Context/KnowledgeBaseOldModel -t [dbo].[Application] -t [dbo].[Case] -t [dbo].[CaseTag] -t [dbo].[Documents] -t [dbo].[DocumentTag] -t [dbo].[Folder] -t [dbo].[Tags] --force
+dotnet ef dbcontext Scaffold "Server=localhost;Database=KnowledgeBase;Port=5433;User Id=postgres;Password=postgres;" Npgsql.EntityFrameworkCore.PostgreSQL --context KnowledgeBaseNewContext --output-dir /Users/wondisi/source/repos/KnowledgeBaseConverter/KnowledgeBaseConverter/Context/KnowledgeBaseNewModel --schema public --force
+
